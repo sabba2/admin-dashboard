@@ -62,19 +62,10 @@
 .header {
   background-color: #f59e0b;
   display: grid;
-}
-
-.header .search-bar {
-  display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
-.header .profile,
+.header .user-info,
 .header .buttons {
   justify-self: right;
-}
-
-.header .user-info {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
 }
