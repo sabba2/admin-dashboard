@@ -69,3 +69,19 @@
 .header .buttons {
   justify-self: right;
 }
+
+.project {
+  width: 110px;
+  height: 110px;
+  background-color: #818cf8;
+  margin: 10px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-content .projects {
+  grid-row: 1/3;
+}
