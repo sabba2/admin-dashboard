@@ -21,17 +21,16 @@
 .icon {
   width: 25px;
   height: auto;
-  place-self: start;
 }
 
 .sidebar {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  background-color: #0284c7;
+  background-color: #333652;
   grid-row: 1/3;
   align-items: start;
   color: white;
-  padding: 15px;
+  padding: 20px;
 }
 
 .sidebar .nav-wrapper {
@@ -93,26 +92,101 @@
 }
 
 .header {
-  background-color: #f59e0b;
+  background-color: #e9eaec;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding: 20px 45px;
+  row-gap: 20px;
+}
+
+.header .search-bar {
+  grid-template-columns: max-content auto;
+  display: grid;
+  column-gap: 10px;
+  align-items: center;
+  font-size: 30px;
+}
+
+.header #search {
+  justify-self: start;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #90adc6;
+  font-size: 1rem;
+  text-indent: 10px;
+}
+
+.header #search:focus,
+#search:active {
+  outline: none;
+}
+
+.header .profile-small {
+  height: 50px;
+  width: auto;
+}
+
+.header .profile-large {
+  height: 75px;
+  width: auto;
+}
+
+.header .greetings {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 20px;
+  justify-items: start;
+  align-items: center;
+  font-weight: 600;
+}
+
+.header .name {
+  font-weight: 600;
+}
+
+.header span p:nth-child(1) {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.header span p:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.buttons .new,
+.upload,
+.share {
+  background-color: #333652;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .header .user-info,
 .header .buttons {
+  display: grid;
+  grid-template-columns: auto max-content max-content;
+  column-gap: 25px;
   justify-self: right;
+  place-items: center;
 }
 
 .project {
   width: 110px;
   height: 110px;
-  background-color: #818cf8;
+  background-color: #e9eaec;
   margin: 10px;
 }
 
 .main-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  background-color: #90adc6;
 }
 
 .main-content .projects {
