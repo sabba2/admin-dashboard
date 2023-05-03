@@ -210,6 +210,17 @@ html {
   background-color: #e9eaec;
   border-left: 8px solid #333652;
   border-radius: 10px;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-rows: max-content max-content auto;
+}
+
+.main-content .project-icons {
+  align-self: end;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: auto max-content max-content;
+  column-gap: 15px;
 }
 
 .main-content .announcements-wrapper {
