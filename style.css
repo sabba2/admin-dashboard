@@ -210,7 +210,7 @@ html {
   background-color: #e9eaec;
   border-left: 8px solid #333652;
   border-radius: 10px;
-  padding: 30px 20px;
+  padding: 40px 30px;
   display: grid;
   grid-template-rows: max-content max-content auto;
 }
@@ -249,10 +249,22 @@ html {
   width: auto;
   background-color: #e9eaec;
   border-radius: 10px;
+  padding: 40px 30px;
+  display: grid;
+  align-items: center;
 }
 
 .main-content .updates-wrapper {
   display: grid;
   height: 100%;
   row-gap: 40px;
+  font-size: 0.8rem;
+}
+
+.main-content .updates-wrapper h3 {
+  font-size: 1rem;
+}
+
+hr {
+  line-height: 1rem;
 }
